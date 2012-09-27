@@ -76,7 +76,7 @@ h4 {font-family: Open Sans, sans-serif;}
 
 #wrapper {position: relative;}
 #topMenu {width: 100%;background: #fff;}
-#topMenu h1 {width: 600px; padding: 10px 15px; margin: 0 auto; text-transform: uppercase; 
+#topMenu h1, footer h1 {width: 600px; padding: 10px 15px; margin: 0 auto; text-transform: uppercase; 
 	font-size: 12px; font-weight: 300; font-family: Open Sans, Arial, sans-serif; letter-spacing: .2em;}
 
 /* Nav
@@ -134,7 +134,7 @@ nav.next-prev {
 #content article {width: 600px; left: 170px;}
 
 #intro , #how, #get, #about {padding-top: 105px;}
-#intro {position: absolute; top: -40px;}
+#intro {position: absolute; padding-top: 60px;}
 #how   {position: absolute; top: 1090px;}
 #get   {position: absolute; top: 2180px;}
 
@@ -150,6 +150,8 @@ nav.next-prev {
 #bg3-2 {position: absolute; top: 1250px;}
 #bg3-3 {position: absolute; top: 1850px; left: 0;}
 #bg3-4 {position: absolute; top: 2900px; left: 550px;}
+#bg3-5 {position: absolute; top: 2546px; left: -50px;}
+
 
 
 /* midground (map markers) */ /* align left edge with center of viewport */ /* move left by half element's width */
@@ -163,6 +165,7 @@ nav.next-prev {
 #bg2-5 {position: absolute; top: 900px;  left: 890px;}
 #bg2-6 {position: absolute; top: 2100px; left: 166px;}
 #bg2-7 {position: absolute; top: 1720px; left: 930px;}
+#bg2-8 {position: absolute; top: 1520px; left: 20px;}
 
 
 /* background (bar charts) */ /* align left edge with center of viewport */ /* move left by half element's width */
