@@ -147,8 +147,8 @@ nav.next-prev {
 .shadow {box-shadow: 0 0 5px #888;-moz-box-shadow: 0 0 5px #888; -webkit-box-shadow: 0 0 5px #888;}
 
 #bg3-1 {position: absolute; top: 433px;  left: -80px;}
-#bg3-2 {position: absolute; top: 1250px;}
-#bg3-3 {position: absolute; top: 1850px; left: 0;}
+#bg3-2 {position: absolute; top: 1288px; left: -12px;}
+#bg3-3 {position: absolute; top: 1850px; left: 0px;}
 #bg3-4 {position: absolute; top: 2900px; left: 550px;}
 #bg3-5 {position: absolute; top: 2546px; left: -50px;}
 
@@ -173,6 +173,6 @@ nav.next-prev {
 #parallax-bg1 {z-index: 1; position: fixed; left: 50%; top: 0; width: 1200px; margin-left: -600px;}
 
 #bg1-1 {position: absolute; top: 85px;   left: -183px;}
-#bg1-2 {position: absolute; top: 467px;  left: 795px;}
+#bg1-2 {position: absolute; top: 467px;  left: 907px;}
 #bg1-3 {position: absolute; top: 900px;  left: -220px;}
 #bg1-4 {position: absolute; top: 1242px; left: 369px;}
