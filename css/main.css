@@ -56,13 +56,20 @@ table {
 *****************************************************************/
 
 html {overflow-y: scroll; /* always force a scrollbar in non-IE */}
-body {background: #e3e5e5; overflow-x: hidden; height: 4550px; line-height: 1.5; color: #333; font-size: 14px; font-family: Merriweather, serif;}
+body {background: #fff; overflow-x: hidden; height: 4550px; line-height: 1.5; color: #333; font-size: 14px; font-family: Merriweather, serif;}
 h1 {color: #333;}
 a, a:link, a:active, a:visited {color:#333; outline: none; text-decoration:none;
 	-webkit-transition: color 0.25s ease-out; -moz-transition: color 0.25s ease-out; -o-transition: color 0.25s ease-out; transition: color 0.25s ease-out;}
 a:hover {color:#BFD846;}
 img {display:block;}
 p {margin:1em 0;}
+p a, p a:link, p a:active, p a:visited{ padding-bottom: 2px; border-bottom: 1px dotted #333;}
+
+.script {font-family: Leckerli One, serif;}
+
+h3 {font-size: 26px;}
+h4 {font-family: Open Sans, sans-serif;}
+
 
 /* Page structure
 *****************************************************************/
@@ -88,13 +95,13 @@ nav#primary li {
 }
 nav#primary a {
 	display: block;
-	width: 20px;
-	height: 20px;
+	width: 13px;
+	height: 13px;
 	text-indent: -9999px;
-	background: transparent url('../img/dot_off.png') 4px 4px no-repeat;
+	background: transparent url('../img/dot_off.png') 0 0 no-repeat;
 }
 nav#primary a:hover, nav#primary a.active {
-	background: transparent url('../img/dot_on.png') 4px -16px no-repeat;
+	background: transparent url('../img/dot_on.png') 0 0 no-repeat;
 }
 nav#primary h1 {
 	position: absolute;
@@ -109,24 +116,12 @@ nav#primary h1 {
 nav.next-prev {
 	margin: 20px 0 0 0;
 	}
-	a.prev,
-	a.next {
-		display: block;
-		width: 54px;
-		height: 30px;
-		text-indent: -9999px;
-		}
-	a.prev {
-		margin: 0 auto 5px auto;
-		background: transparent url('../img/up.png') 0 0 no-repeat;
-		}
+	a.prev, a.next {display: block; width: 20px; height: 11px; /*text-indent: -9999px;*/}
+	a.prev {margin: 0 auto 3px auto; /*background: transparent url('../img/up.png') 0 0 no-repeat;*/}
 /*		a.prev:hover {
 			background: transparent url('../img/up.png') 0 -11px no-repeat;
 			}*/
-	a.next {
-		margin: 5px auto 0 auto;
-		background: transparent url('../img/down.png') -1px 0 no-repeat;
-		}
+	a.next {margin: 3px auto 0 auto; /*background: transparent url('../img/down.png') 0 0 no-repeat;*/}
 /*		a.next:hover {
 			background: transparent url('../img/down.png') -1px -11px no-repeat;
 			}*/
@@ -135,131 +130,46 @@ nav.next-prev {
 *****************************************************************/
 
 /* content */
-#content {
-	z-index: 4;
-	position: relative;
-	max-width: 940px;
-	padding: 0 10px;
-	margin: 0 auto;
-	line-height: 1.7;
-	}
-	#content article {
-		width: 600px;
-		left: 170px;
-		}
-		#intro , #how, #get, #about {padding-top: 105px;}
-		#intro {
-			position: absolute;
-			top: 0px;
-			}
-		#how {
-			position: absolute;
-			top: 1090px;
-			}
-		#get{
-			position: absolute;
-			top: 2180px;
-			}
-			#content h1 {
-				margin: 0 0 25px 0;
-				font-size: 60px;
-				font-family: Georgia, serif;
-				font-weight: normal;
-				line-height: 65px;
-				}
-		#about {
-			position: absolute;
-			top: 3270px;
-			}
-/* foreground (info-images) */
-#parallax-bg3 {
-	z-index: 3;
-	position: fixed;
-	left: 50%; /* align left edge with center of viewport */
-	top: 0;
-	width: 940px;
-	margin-left: -470px; /* move left by half element's width */
-	}
-	/* images */
-/*	#bg3-1 {
-		position: absolute;
-		top: -111px;
-		left: 355px;
-		}*/
-	#bg3-2 {
-		position: absolute;
-		top: 1250px;
-		}
-	#bg3-3 {
-		position: absolute;
-		top: 1628px;
-		left: 403px;
-		}
-	#bg3-4 {
-		position: absolute;
-		top: 2700px;
-		left: -85px;
-		}
-/* midground (map markers) */
-#parallax-bg2 {
-	z-index: 2;
-	position: fixed;
-	left: 50%; /* align left edge with center of viewport */
-	top: 0;
-	width: 1200px;
-	margin-left: -600px; /* move left by half element's width */
-	}
-	#bg2-1 {
-		position: absolute;
-		top: 162px;
-		left: 200px;
-		}
-	#bg2-2 {
-		position: absolute;
-		top: 300px;
-		left: 1150px;
-		}
-	#bg2-3 {
-		position: absolute;
-		top: 543px;
-		left: -35px;
-		}
-	#bg2-4 {
-		position: absolute;
-		top: 1180px;
-		left: 250px;
-		}
-	#bg2-5 {
-		position: absolute;
-		top: 900px;
-		left: 890px;
-		}
-/* background (bar charts) */
-#parallax-bg1 {
-	z-index: 1;
-	position: fixed;
-	left: 50%; /* align left edge with center of viewport */
-	top: 0;
-	width: 1200px;
-	margin-left: -600px; /* move left by half element's width */
-	}
-	#bg1-1 {
-		position: absolute;
-		top: 85px;
-		left: -270px;
-		}
-	#bg1-2 {
-		position: absolute;
-		top: 440px;
-		left: 795px;
-		}
-	#bg1-3 {
-		position: absolute;
-		top: 900px;
-		left: -220px;
-		}
-	#bg1-4 {
-		position: absolute;
-		top: 1020px;
-		left: 450px;
-		}
+#content {z-index: 4; position: relative; max-width: 940px; padding: 0 10px; margin: 0 auto; line-height: 1.7;}
+#content article {width: 600px; left: 170px;}
+
+#intro , #how, #get, #about {padding-top: 105px;}
+#intro {position: absolute; top: -40px;}
+#how   {position: absolute; top: 1090px;}
+#get   {position: absolute; top: 2180px;}
+
+#content h1 {margin: 0 0 25px 0; font-size: 60px; font-family: Open Sans, Arial, sans-serif; font-weight: 700; line-height: 65px;}
+#about {position: absolute; top: 3270px;}
+
+/* foreground (info-images) */ /* align left edge with center of viewport */ /* move left by half element's width */
+#parallax-bg3 {z-index: 3;position: fixed; left: 50%; top: 0; width: 940px; margin-left: -470px; }
+
+.shadow {box-shadow: 0 0 5px #888;-moz-box-shadow: 0 0 5px #888; -webkit-box-shadow: 0 0 5px #888;}
+
+#bg3-1 {position: absolute; top: 433px;  left: -80px;}
+#bg3-2 {position: absolute; top: 1250px;}
+#bg3-3 {position: absolute; top: 1628px; left: 403px;}
+#bg3-4 {position: absolute; top: 2900px; left: 550px;}
+
+
+/* midground (map markers) */ /* align left edge with center of viewport */ /* move left by half element's width */
+
+#parallax-bg2 {z-index: 2; position: fixed; left: 50%; top: 0; width: 1200px; margin-left: -600px;}
+
+#bg2-1 {position: absolute; top: 162px;  left: 200px;}
+#bg2-2 {position: absolute; top: 300px;  left: 1150px;}
+#bg2-3 {position: absolute; top: 543px;  left: -35px;}
+#bg2-4 {position: absolute; top: 1180px; left: 250px;}
+#bg2-5 {position: absolute; top: 900px;  left: 890px;}
+#bg2-6 {position: absolute; top: 2100px; left: 166px;}
+#bg2-7 {position: absolute; top: 1800px; left: 930px;}
+
+
+/* background (bar charts) */ /* align left edge with center of viewport */ /* move left by half element's width */
+
+#parallax-bg1 {z-index: 1; position: fixed; left: 50%; top: 0; width: 1200px; margin-left: -600px;}
+
+#bg1-1 {position: absolute; top: 85px;   left: -183px;}
+#bg1-2 {position: absolute; top: 467px;  left: 795px;}
+#bg1-3 {position: absolute; top: 900px;  left: -220px;}
+#bg1-4 {position: absolute; top: 1242px; left: 369px;}
