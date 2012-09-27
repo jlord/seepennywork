@@ -148,7 +148,7 @@ nav.next-prev {
 
 #bg3-1 {position: absolute; top: 433px;  left: -80px;}
 #bg3-2 {position: absolute; top: 1250px;}
-#bg3-3 {position: absolute; top: 1628px; left: 403px;}
+#bg3-3 {position: absolute; top: 1850px; left: 0;}
 #bg3-4 {position: absolute; top: 2900px; left: 550px;}
 
 
@@ -159,10 +159,10 @@ nav.next-prev {
 #bg2-1 {position: absolute; top: 162px;  left: 200px;}
 #bg2-2 {position: absolute; top: 300px;  left: 1150px;}
 #bg2-3 {position: absolute; top: 543px;  left: -35px;}
-#bg2-4 {position: absolute; top: 1180px; left: 250px;}
+#bg2-4 {position: absolute; top: 1180px; left: 208px;}
 #bg2-5 {position: absolute; top: 900px;  left: 890px;}
 #bg2-6 {position: absolute; top: 2100px; left: 166px;}
-#bg2-7 {position: absolute; top: 1800px; left: 930px;}
+#bg2-7 {position: absolute; top: 1720px; left: 930px;}
 
 
 /* background (bar charts) */ /* align left edge with center of viewport */ /* move left by half element's width */
