@@ -189,7 +189,7 @@ nav.next-prev {
 	#wrapper {max-width: 768px;}
 	#parallax-bg1, #parallax-bg2, #parallax-bg3 {display: none !important;} 
 
-
+	body {background: #ff00ff;}
 }
  
 /* Landscape phone to portrait tablet */
