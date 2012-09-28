@@ -185,7 +185,12 @@ nav.next-prev {
 @media (min-width: 1200px) { ... }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { #wrapper {max-width: 768px;} }
+@media (min-width: 768px) and (max-width: 979px) { 
+	#wrapper {max-width: 768px;}
+	#parallax-bg1, #parallax-bg2, #parallax-bg3 {display: hidden;} 
+
+
+}
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { #wrapper {max-width: 768px;} }
