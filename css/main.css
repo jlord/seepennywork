@@ -81,6 +81,8 @@ small {font-size: 8px; color: #ff00ff; padding: 2px 2px; margin: 0 3px; border-t
 #topMenu h1 {width: 600px; padding: 10px 15px; margin: 0 auto; text-transform: uppercase; 
 	font-size: 11px; font-weight: 300; font-family: Open Sans, Arial, sans-serif; letter-spacing: .2em;}
 
+.mobileimg {display: none;}
+
 /* Nav
 *****************************************************************/
 
@@ -160,14 +162,14 @@ nav.next-prev {
 
 #parallax-bg2 {z-index: 2; position: fixed; left: 50%; top: 0; width: 1200px; margin-left: -600px;}
 
-#bg2-1 {position: absolute; top: 162px;  left: 200px;}
-#bg2-2 {position: absolute; top: 300px;  left: 1150px;}
-#bg2-3 {position: absolute; top: 543px;  left: -35px;}
-#bg2-4 {position: absolute; top: 1180px; left: 208px;}
-#bg2-5 {position: absolute; top: 900px;  left: 890px;}
-#bg2-6 {position: absolute; top: 2100px; left: 166px;}
-#bg2-7 {position: absolute; top: 1720px; left: 930px;}
-#bg2-8 {position: absolute; top: 1520px; left: 20px;}
+#bg2-1 {position: realative; top: 162px;  left: 200px;}
+#bg2-2 {position: realative; top: 300px;  left: 1150px;}
+#bg2-3 {position: realative; top: 543px;  left: -35px;}
+#bg2-4 {position: realative; top: 1180px; left: 208px;}
+#bg2-5 {position: realative; top: 900px;  left: 890px;}
+#bg2-6 {position: realative; top: 2100px; left: 166px;}
+#bg2-7 {position: realative; top: 1720px; left: 930px;}
+#bg2-8 {position: realative; top: 1520px; left: 20px;}
 
 
 /* background (bar charts) */ /* align left edge with center of viewport */ /* move left by half element's width */
@@ -185,11 +187,28 @@ nav.next-prev {
 @media (min-width: 1200px) { ... }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
-	#wrapper {max-width: 768px;}
-	#parallax-bg1, #parallax-bg2, #parallax-bg3 {display: none !important;} 
+@media (max-width: 979px) { 
+	#wrapper {width: 100%; margin: 0px auto;}
+	/*#content {width: 80%; background: #acacac;}*/
+	/*#content article {width: 80%; background: #fff000; left: 0px;	}*/
 
-	body {background: #ff00ff;}
+	#parallax-bg1, #parallax-bg2, #parallax-bg3 {display: none !important;} 
+	nav#primary, a.next, a.prev {display: none;}
+
+
+#content {z-index: 4; position: relative; width: 100%; max-width: 979px; padding: 0 10px; margin: 0 auto; line-height: 1.7;}
+#content article {width: 80%; position: relative; left: auto; margin: 0px auto; }
+.mobileimg {display: block; margin: 20px auto;}
+#bg3-1, #bg3-2, #bg3-3, #bg3-4, #bg3-5 {positon: relative; left: auto; top: auto;}
+#bg3-1 {width: 70%;}
+#bg3-2, #bg3-3 {width: 100%;}
+#bg3-4, #bg3-5 {position: relative; float: left; margin-right: 20px;}
+
+#intro , #how, #get, #about {position: relative; top: auto; padding-bottom: 300px;}
+#intro {padding-bottom: 400px;}
+body {height: auto;}
+
+
 }
  
 /* Landscape phone to portrait tablet */
