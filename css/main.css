@@ -162,14 +162,14 @@ nav.next-prev {
 
 #parallax-bg2 {z-index: 2; position: fixed; left: 50%; top: 0; width: 1200px; margin-left: -600px;}
 
-#bg2-1 {position: realative; top: 162px;  left: 200px;}
-#bg2-2 {position: realative; top: 300px;  left: 1150px;}
-#bg2-3 {position: realative; top: 543px;  left: -35px;}
-#bg2-4 {position: realative; top: 1180px; left: 208px;}
-#bg2-5 {position: realative; top: 900px;  left: 890px;}
-#bg2-6 {position: realative; top: 2100px; left: 166px;}
-#bg2-7 {position: realative; top: 1720px; left: 930px;}
-#bg2-8 {position: realative; top: 1520px; left: 20px;}
+#bg2-1 {position: absolute; top: 162px;  left: 200px;}
+#bg2-2 {position: absolute; top: 300px;  left: 1150px;}
+#bg2-3 {position: absolute; top: 543px;  left: -35px;}
+#bg2-4 {position: absolute; top: 1180px; left: 208px;}
+#bg2-5 {position: absolute; top: 900px;  left: 890px;}
+#bg2-6 {position: absolute; top: 2100px; left: 166px;}
+#bg2-7 {position: absolute; top: 1720px; left: 930px;}
+#bg2-8 {position: absolute; top: 1520px; left: 20px;}
 
 
 /* background (bar charts) */ /* align left edge with center of viewport */ /* move left by half element's width */
